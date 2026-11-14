@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 240 240" role="img" aria-label="Animated gatepost mark: two overlapping circles draw a pointed arch, the keyhole appears, and a check mark is written beneath it" style="filter: drop-shadow(3px 4px 0 #050B14)">
+<circle pathLength="1" cx="80" cy="150" r="80" fill="none" stroke="#5E7591" stroke-width="1" opacity="0.8"></circle>
+<circle pathLength="1" cx="160" cy="150" r="80" fill="none" stroke="#5E7591" stroke-width="1" opacity="0.8"></circle>
+<line pathLength="1" x1="80" y1="150" x2="160" y2="150" stroke="#8FA3B8" stroke-width="1"></line>
+<line pathLength="1" x1="120" y1="56" x2="120" y2="214" stroke="#5E7591" stroke-width="0.9" opacity="0.7"></line>
+<path d="M64 200 L64 150 A96 96 0 0 1 120 62.7 A96 96 0 0 1 176 150 L176 200 Z" fill="#5E7591"></path>
+<path pathLength="1" d="M64 200 L64 150 A96 96 0 0 1 120 62.7 A96 96 0 0 1 176 150 L176 200" fill="none" stroke="#D7DEE6" stroke-width="2"></path>
+<path d="M80 200 L80 150 A80 80 0 0 1 120 80.7 A80 80 0 0 1 160 150 L160 200 Z" fill="#0E1A2B"></path>
+<path pathLength="1" d="M80 200 L80 150 A80 80 0 0 1 120 80.7 A80 80 0 0 1 160 150 L160 200" fill="none" stroke="#D7DEE6" stroke-width="1.4"></path>
+<line pathLength="1" x1="30" y1="200" x2="210" y2="200" stroke="#D7DEE6" stroke-width="1.6"></line>
+<g><circle cx="80" cy="150" r="3" fill="#D7DEE6"></circle></g>
+<g><circle cx="160" cy="150" r="3" fill="#D7DEE6"></circle></g>
+<g><circle cx="120" cy="54" r="6" fill="#D7DEE6"></circle><circle cx="118" cy="52" r="2" fill="#FFFFFF" opacity="0.7"></circle></g>
+<g><circle cx="120" cy="124" r="16" fill="#F26A1B"></circle></g>
+<g><circle cx="120" cy="124" r="8" fill="#F26A1B"></circle></g>
+<path pathLength="1" d="M108 150 L117 161 L134 138" fill="none" stroke="#F26A1B" stroke-width="7" stroke-linecap="round" stroke-linejoin="round"></path>
+</svg>

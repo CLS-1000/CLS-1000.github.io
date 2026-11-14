@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 240 240" role="img" aria-label="Animated pdx1 mark: a circle and nested triangles draw into a mountain, the inner peak fills, and a beacon at the summit sends out pulses" style="filter: drop-shadow(3px 4px 0 #050B14)">
+<circle pathLength="1" cx="120" cy="124" r="90" fill="none" stroke="#D7DEE6" stroke-width="1.4"></circle>
+<circle pathLength="1" cx="120" cy="124" r="45" fill="none" stroke="#5E7591" stroke-width="1"></circle>
+<polygon pathLength="1" points="120,214 42.1,79 197.9,79" fill="none" stroke="#5E7591" stroke-width="1" opacity="0.6"></polygon>
+<line pathLength="1" x1="120" y1="34" x2="120" y2="214" stroke="#5E7591" stroke-width="0.9" opacity="0.7"></line>
+<line pathLength="1" x1="30" y1="169" x2="210" y2="169" stroke="#8FA3B8" stroke-width="1.2"></line>
+<polygon pathLength="1" points="120,34 42.1,169 197.9,169" fill="none" stroke="#D7DEE6" stroke-width="1.8"></polygon>
+<polygon pathLength="1" points="120,64 66,169 174,169" fill="none" stroke="#8FA3B8" stroke-width="1.4"></polygon>
+<polygon pathLength="1" points="120,94 90,169 150,169" fill="none" stroke="#F26A1B" stroke-width="1.6"></polygon>
+<g><polygon points="120,94 90,169 150,169" fill="#F26A1B"></polygon><polygon points="120,94 120,169 150,169" fill="#000000" opacity="0.28"></polygon></g>
+<g><circle cx="42.1" cy="169" r="3" fill="#D7DEE6"></circle></g>
+<g><circle cx="197.9" cy="169" r="3" fill="#D7DEE6"></circle></g>
+<g><circle cx="120" cy="214" r="3" fill="#8FA3B8"></circle></g>
+<g>
+<circle cx="120" cy="34" r="13" fill="none" stroke="#F26A1B" stroke-width="1.5"></circle>
+<circle cx="120" cy="34" r="13" fill="none" stroke="#F26A1B" stroke-width="1.5"></circle>
+<circle cx="120" cy="34" r="7" fill="#F26A1B"></circle>
+<circle cx="118" cy="32" r="2.5" fill="#FFFFFF" opacity="0.7"></circle>
+</g>
+</svg>

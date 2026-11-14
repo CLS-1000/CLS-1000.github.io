@@ -1,0 +1,9 @@
+---
+// Inlines a project mark so it inherits page CSS and stays sharp at any size.
+const marks = import.meta.glob('../marks/*.svg', { query: '?raw', import: 'default', eager: true });
+const { slug, size = 72, label } = Astro.props;
+let svg = (marks[`../marks/${slug}.svg`] as string) ?? '';
+svg = svg.replace(/id="([^"]+)"/g, `id="${slug}-$1"`).replace(/#([a-z][\w-]*)\)/g, `#${slug}-$1)`).replace(/href="#([^"]+)"/g, `href="#${slug}-$1"`);
+if (label === '') svg = svg.replace(/\srole="img"/, ' aria-hidden="true"').replace(/\saria-label="[^"]*"/, '');
+---
+<span class="mark" style={`--s:${size}px`} set:html={svg} />

@@ -1,0 +1,97 @@
+<svg viewBox="160 20 600 600" role="img" aria-label="The Sentinel: a guardian figure assembled from the project marks" style="overflow: visible; filter: drop-shadow(3px 4px 0 #050B14)">
+<ellipse cx="460" cy="608" rx="112" ry="8" fill="#050B14" opacity="0.8"></ellipse>
+<g>
+<polygon points="410,372 452,372 446,470 416,470" fill="#34465E" stroke="#D7DEE6" stroke-width="2" stroke-linejoin="round"></polygon>
+<circle cx="431" cy="475" r="7" fill="#5E7591" stroke="#D7DEE6" stroke-width="2"></circle>
+<polygon points="416,482 446,482 442,548 420,548" fill="#5E7591" stroke="#D7DEE6" stroke-width="2" stroke-linejoin="round"></polygon>
+<polygon points="430,524 398,604 462,604" fill="#22344B" stroke="#D7DEE6" stroke-width="2" stroke-linejoin="round"></polygon>
+<polygon points="430,566 415,604 445,604" fill="#F26A1B"></polygon>
+</g>
+<g>
+<polygon points="468,372 510,372 504,470 474,470" fill="#34465E" stroke="#D7DEE6" stroke-width="2" stroke-linejoin="round"></polygon>
+<circle cx="489" cy="475" r="7" fill="#5E7591" stroke="#D7DEE6" stroke-width="2"></circle>
+<polygon points="474,482 504,482 500,548 478,548" fill="#5E7591" stroke="#D7DEE6" stroke-width="2" stroke-linejoin="round"></polygon>
+<polygon points="490,524 458,604 522,604" fill="#22344B" stroke="#D7DEE6" stroke-width="2" stroke-linejoin="round"></polygon>
+<polygon points="490,566 475,604 505,604" fill="#F26A1B"></polygon>
+</g>
+<g>
+<polygon points="460,292 514,307 406,307" fill="#5E7591" stroke="#D7DEE6" stroke-width="2" stroke-linejoin="round"></polygon>
+<path d="M420 312 L420 352 M444 312 L444 352 M476 312 L476 352 M500 312 L500 352" stroke="#D7DEE6" stroke-width="5" stroke-linecap="round"></path>
+<path d="M404 359 L516 359 M398 367 L522 367" stroke="#8FA3B8" stroke-width="2.5" stroke-linecap="round"></path>
+</g>
+<g>
+<rect x="446" y="150" width="28" height="18" fill="#5E7591" stroke="#D7DEE6" stroke-width="1.5"></rect>
+<polygon points="390,166 530,166 514,290 406,290" fill="#34465E" stroke="#D7DEE6" stroke-width="2" stroke-linejoin="round"></polygon>
+<circle cx="460" cy="226" r="27" fill="none" stroke="#D7DEE6" stroke-width="1.4"></circle>
+<circle cx="460" cy="226" r="13" fill="none" stroke="#D7DEE6" stroke-width="1.1"></circle>
+<circle cx="460" cy="213" r="13" fill="none" stroke="#D7DEE6" stroke-width="1.1"></circle>
+<circle cx="471.3" cy="219.5" r="13" fill="none" stroke="#D7DEE6" stroke-width="1.1"></circle>
+<circle cx="471.3" cy="232.5" r="13" fill="none" stroke="#D7DEE6" stroke-width="1.1"></circle>
+<circle cx="460" cy="239" r="13" fill="none" stroke="#D7DEE6" stroke-width="1.1"></circle>
+<circle cx="448.7" cy="232.5" r="13" fill="none" stroke="#D7DEE6" stroke-width="1.1"></circle>
+<circle cx="448.7" cy="219.5" r="13" fill="none" stroke="#D7DEE6" stroke-width="1.1"></circle>
+<circle cx="460" cy="226" r="6" fill="#F26A1B"></circle>
+<g><circle class="s-pulse" cx="460" cy="226" r="16" fill="#F26A1B"></circle></g>
+</g>
+<g>
+<circle cx="366" cy="188" r="27" fill="#34465E" stroke="#D7DEE6" stroke-width="2"></circle>
+<ellipse cx="366" cy="188" rx="11" ry="27" fill="none" stroke="#8FA3B8" stroke-width="1.2"></ellipse>
+<path d="M339 188 L393 188 M343 175 L389 175 M343 201 L389 201" stroke="#8FA3B8" stroke-width="1"></path>
+<circle cx="374" cy="180" r="3.5" fill="#F26A1B"></circle>
+</g>
+<g>
+<circle cx="554" cy="188" r="27" fill="#34465E" stroke="#D7DEE6" stroke-width="2"></circle>
+<ellipse cx="554" cy="188" rx="11" ry="27" fill="none" stroke="#8FA3B8" stroke-width="1.2"></ellipse>
+<path d="M527 188 L581 188 M531 175 L577 175 M531 201 L577 201" stroke="#8FA3B8" stroke-width="1"></path>
+<circle cx="546" cy="196" r="3.5" fill="#F26A1B"></circle>
+</g>
+<g>
+<rect x="346" y="214" width="38" height="60" rx="3" fill="#5E7591" stroke="#D7DEE6" stroke-width="2"></rect>
+<line x1="346" y1="251" x2="384" y2="251" stroke="#22344B" stroke-width="2"></line>
+<rect x="342" y="280" width="44" height="70" rx="3" fill="#34465E" stroke="#D7DEE6" stroke-width="2"></rect>
+<path d="M342 350 A44 44 0 0 1 386 306" fill="none" stroke="#8FA3B8" stroke-width="1.4"></path>
+<rect x="348" y="354" width="32" height="18" rx="6" fill="#5E7591" stroke="#D7DEE6" stroke-width="2"></rect>
+</g>
+<g>
+<rect x="536" y="214" width="38" height="60" rx="3" fill="#5E7591" stroke="#D7DEE6" stroke-width="2"></rect>
+<line x1="536" y1="251" x2="574" y2="251" stroke="#22344B" stroke-width="2"></line>
+<rect x="534" y="280" width="44" height="70" rx="3" fill="#34465E" stroke="#D7DEE6" stroke-width="2"></rect>
+<path d="M578 350 A44 44 0 0 0 534 306" fill="none" stroke="#8FA3B8" stroke-width="1.4"></path>
+<rect x="540" y="354" width="32" height="18" rx="6" fill="#5E7591" stroke="#D7DEE6" stroke-width="2"></rect>
+</g>
+<g>
+<polygon points="318,284 347.4,301 347.4,335 318,352 288.6,335 288.6,301" fill="#22344B" stroke="#D7DEE6" stroke-width="2" stroke-linejoin="round"></polygon>
+<path d="M318 318 L318 294 M318 318 L338.8 306 M318 318 L338.8 330 M318 318 L318 342 M318 318 L297.2 330 M318 318 L297.2 306" stroke="#F26A1B" stroke-width="1.4"></path>
+<circle cx="318" cy="294" r="3.5" fill="#D7DEE6"></circle>
+<circle cx="338.8" cy="306" r="3.5" fill="#D7DEE6"></circle>
+<circle cx="338.8" cy="330" r="3.5" fill="#D7DEE6"></circle>
+<circle cx="318" cy="342" r="3.5" fill="#D7DEE6"></circle>
+<circle cx="297.2" cy="330" r="3.5" fill="#D7DEE6"></circle>
+<circle cx="297.2" cy="306" r="3.5" fill="#D7DEE6"></circle>
+<circle cx="318" cy="318" r="5.5" fill="#F26A1B"></circle>
+</g>
+<g>
+<line x1="572" y1="362" x2="588" y2="362" stroke="#D7DEE6" stroke-width="3" stroke-linecap="round"></line>
+<path d="M588 362 A32 32 0 0 1 620 330 A20 20 0 0 1 640 350 A12 12 0 0 1 628 362 A8 8 0 0 1 620 354" fill="none" stroke="#D7DEE6" stroke-width="5" stroke-linecap="round"></path>
+<path d="M588 362 A32 32 0 0 1 620 330 A20 20 0 0 1 640 350" fill="none" stroke="#F26A1B" stroke-width="2" stroke-linecap="round"></path>
+<circle cx="620" cy="330" r="5" fill="#F26A1B"></circle>
+<g><circle class="s-pulse" cx="620" cy="330" r="10" fill="#F26A1B"></circle></g>
+</g>
+<g>
+<path d="M420 152 L420 104 A42 42 0 0 1 460 62 A42 42 0 0 1 500 104 L500 152 Z" fill="#5E7591" stroke="#D7DEE6" stroke-width="2" stroke-linejoin="round"></path>
+<path d="M430 150 L430 106 A32 32 0 0 1 460 74 A32 32 0 0 1 490 106 L490 150 Z" fill="#22344B"></path>
+<path d="M438 140 L482 140" stroke="#8FA3B8" stroke-width="2" stroke-linecap="round"></path>
+</g>
+<g>
+<line x1="460" y1="62" x2="460" y2="44" stroke="#D7DEE6" stroke-width="3"></line>
+<polygon points="460,32 450,50 470,50" fill="#D7DEE6"></polygon>
+<circle cx="460" cy="30" r="5" fill="#F26A1B"></circle>
+<g><circle class="s-ping" cx="460" cy="30" r="8" fill="none" stroke="#F26A1B" stroke-width="1.6"></circle></g>
+</g>
+<g>
+<path d="M430 112 Q460 94 490 112 Q460 130 430 112 Z" fill="#08111D" stroke="#D7DEE6" stroke-width="1.6" stroke-linejoin="round"></path>
+<circle cx="460" cy="112" r="8" fill="none" stroke="#D7DEE6" stroke-width="1.2"></circle>
+<circle cx="460" cy="112" r="4.5" fill="#F26A1B"></circle>
+<g><circle class="s-pulse" cx="460" cy="112" r="12" fill="#F26A1B"></circle></g>
+</g>
+</svg>

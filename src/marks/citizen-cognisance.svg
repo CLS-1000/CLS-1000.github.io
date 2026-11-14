@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 240 240" role="img" aria-label="Animated Citizens Cognisance mark: six citizen figures appear in a ring, join hands around a hexagon, connect to a shared centre that lights up, and then each figure lights up in turn" style="filter: drop-shadow(3px 4px 0 #050B14)">
+<circle pathLength="1" cx="120" cy="120" r="96" fill="none" stroke="#8FA3B8" stroke-width="1.2"></circle>
+<circle pathLength="1" cx="120" cy="120" r="30" fill="none" stroke="#5E7591" stroke-width="1"></circle>
+<polygon pathLength="1" points="120,56 175.4,88 175.4,152 120,184 64.6,152 64.6,88" fill="none" stroke="#D7DEE6" stroke-width="1.6" stroke-linejoin="round"></polygon>
+<path pathLength="1" d="M120 66 L120 112 M166.7 93 L127 116 M166.7 147 L127 124 M120 174 L120 128 M73.3 147 L113 124 M73.3 93 L113 116" stroke="#F26A1B" stroke-width="1.4" opacity="0.85"></path>
+<g><circle cx="120" cy="48" r="6" fill="#D7DEE6"></circle><path d="M110 64 A10 9 0 0 1 130 64 Z" fill="#D7DEE6"></path></g>
+<g><circle cx="175.4" cy="80" r="6" fill="#D7DEE6"></circle><path d="M165.4 96 A10 9 0 0 1 185.4 96 Z" fill="#D7DEE6"></path></g>
+<g><circle cx="175.4" cy="144" r="6" fill="#D7DEE6"></circle><path d="M165.4 160 A10 9 0 0 1 185.4 160 Z" fill="#D7DEE6"></path></g>
+<g><circle cx="120" cy="176" r="6" fill="#D7DEE6"></circle><path d="M110 192 A10 9 0 0 1 130 192 Z" fill="#D7DEE6"></path></g>
+<g><circle cx="64.6" cy="144" r="6" fill="#D7DEE6"></circle><path d="M54.6 160 A10 9 0 0 1 74.6 160 Z" fill="#D7DEE6"></path></g>
+<g><circle cx="64.6" cy="80" r="6" fill="#D7DEE6"></circle><path d="M54.6 96 A10 9 0 0 1 74.6 96 Z" fill="#D7DEE6"></path></g>
+<g><circle cx="120" cy="48" r="6" fill="#F26A1B"></circle></g>
+<g><circle cx="175.4" cy="80" r="6" fill="#F26A1B"></circle></g>
+<g><circle cx="175.4" cy="144" r="6" fill="#F26A1B"></circle></g>
+<g><circle cx="120" cy="176" r="6" fill="#F26A1B"></circle></g>
+<g><circle cx="64.6" cy="144" r="6" fill="#F26A1B"></circle></g>
+<g><circle cx="64.6" cy="80" r="6" fill="#F26A1B"></circle></g>
+<g><circle cx="120" cy="120" r="16" fill="#F26A1B"></circle><circle cx="120" cy="120" r="9" fill="#F26A1B"></circle><circle cx="117" cy="117" r="3" fill="#FFFFFF" opacity="0.7"></circle></g>
+</svg>

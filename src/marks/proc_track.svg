@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 240 240" role="img" aria-label="Animated proc_track mark: a Fibonacci spiral track draws itself, then a glowing token travels along it, lighting up each station it passes" style="filter: drop-shadow(3px 4px 0 #050B14)">
+<circle pathLength="1" cx="120" cy="120" r="92" fill="none" stroke="#5E7591" stroke-width="1"></circle>
+<rect pathLength="1" x="42" y="72" width="156" height="96" fill="none" stroke="#D7DEE6" stroke-width="1.4"></rect>
+<path pathLength="1" d="M138 72 L138 168 M138 132 L198 132 M162 132 L162 168 M138 144 L162 144 M150 132 L150 144" stroke="#8FA3B8" stroke-width="1.1"></path>
+<path pathLength="1" d="M42 168 A96 96 0 0 1 138 72 A60 60 0 0 1 198 132 A36 36 0 0 1 162 168 A24 24 0 0 1 138 144 A12 12 0 0 1 150 132" fill="none" stroke="#34465E" stroke-width="12" stroke-linecap="round"></path>
+<path pathLength="1" d="M42 168 A96 96 0 0 1 138 72 A60 60 0 0 1 198 132 A36 36 0 0 1 162 168 A24 24 0 0 1 138 144 A12 12 0 0 1 150 132" fill="none" stroke="#D7DEE6" stroke-width="8" stroke-linecap="round"></path>
+<path pathLength="1" d="M42 168 A96 96 0 0 1 138 72 A60 60 0 0 1 198 132 A36 36 0 0 1 162 168 A24 24 0 0 1 138 144 A12 12 0 0 1 150 132" fill="none" stroke="#F26A1B" stroke-width="4" stroke-linecap="round"></path>
+<g><circle cx="42" cy="168" r="7" fill="#0E1A2B" stroke="#D7DEE6" stroke-width="2"></circle></g>
+<g><circle cx="138" cy="72" r="7" fill="#0E1A2B" stroke="#D7DEE6" stroke-width="2"></circle></g>
+<g><circle cx="198" cy="132" r="7" fill="#0E1A2B" stroke="#D7DEE6" stroke-width="2"></circle></g>
+<g><circle cx="162" cy="168" r="6" fill="#0E1A2B" stroke="#D7DEE6" stroke-width="2"></circle></g>
+<g><circle cx="138" cy="144" r="5" fill="#0E1A2B" stroke="#D7DEE6" stroke-width="2"></circle></g>
+<g><circle cx="150" cy="132" r="4" fill="#0E1A2B" stroke="#D7DEE6" stroke-width="2"></circle></g>
+<g><circle cx="42" cy="168" r="7" fill="#F26A1B"></circle></g>
+<g><circle cx="138" cy="72" r="7" fill="#F26A1B"></circle></g>
+<g><circle cx="198" cy="132" r="7" fill="#F26A1B"></circle></g>
+<g>
+<circle cx="0" cy="0" r="16" fill="#F26A1B"></circle>
+<circle cx="0" cy="0" r="8" fill="#F26A1B"></circle>
+<circle cx="-2.5" cy="-2.5" r="2.8" fill="#FFFFFF" opacity="0.7"></circle>
+</g>
+</svg>

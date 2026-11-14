@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 240 240" role="img" aria-label="Animated OSINT mark: an eye drawn from two overlapping arcs, a radar sweep turns inside the iris, and open-source signal points connect in toward the centre" style="filter: drop-shadow(3px 4px 0 #050B14)">
+<defs>
+<clipPath id="os-iris"><circle cx="120" cy="120" r="34"></circle></clipPath>
+</defs>
+<circle pathLength="1" cx="120" cy="120" r="96" fill="none" stroke="#5E7591" stroke-width="1"></circle>
+<path pathLength="1" d="M210 120 L216 120 M120 210 L120 216 M30 120 L24 120 M120 30 L120 24" stroke="#8FA3B8" stroke-width="1.5"></path>
+<path pathLength="1" d="M28 120 Q 120 30 212 120 Q 120 210 28 120 Z" fill="none" stroke="#D7DEE6" stroke-width="2" stroke-linejoin="round"></path>
+<circle pathLength="1" cx="120" cy="120" r="34" fill="none" stroke="#D7DEE6" stroke-width="1.6"></circle>
+<circle pathLength="1" cx="120" cy="120" r="22" fill="none" stroke="#8FA3B8" stroke-width="1"></circle>
+<g clip-path="url(#os-iris)">
+<g>
+<path d="M120 120 L120 86 A34 34 0 0 1 149.4 103 Z" fill="#F26A1B" opacity="0.35"></path>
+<line x1="120" y1="120" x2="120" y2="86" stroke="#F26A1B" stroke-width="1.6"></line>
+</g>
+</g>
+<path pathLength="1" d="M58 72 L102 106 M186 80 L140 108 M64 172 L101 135 M180 168 L139 134" stroke="#F26A1B" stroke-width="1.3" stroke-dasharray="1" opacity="0.8"></path>
+<g><circle cx="58" cy="72" r="4.5" fill="#D7DEE6"></circle></g>
+<g><circle cx="186" cy="80" r="4.5" fill="#D7DEE6"></circle></g>
+<g><circle cx="64" cy="172" r="4.5" fill="#D7DEE6"></circle></g>
+<g><circle cx="180" cy="168" r="4.5" fill="#D7DEE6"></circle></g>
+<g><circle cx="120" cy="120" r="14" fill="#F26A1B"></circle><circle cx="120" cy="120" r="8" fill="#F26A1B"></circle><circle cx="117.5" cy="117.5" r="2.8" fill="#FFFFFF" opacity="0.7"></circle></g>
+</svg>

@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 240 240" role="img" aria-label="Animated CLS mark: foundation stones rise into place, a keystone settles on them, and an endless infinity loop is drawn inside it with a glowing learning token travelling around it continuously" style="filter: drop-shadow(3px 4px 0 #050B14)">
+<circle pathLength="1" cx="120" cy="124" r="100" fill="none" stroke="#5E7591" stroke-width="1"></circle>
+<path pathLength="1" d="M220 124 L226 124 M120 224 L120 230 M20 124 L14 124 M120 24 L120 18" stroke="#8FA3B8" stroke-width="1.5"></path>
+<g><rect x="36" y="198" width="168" height="16" fill="#22344B" stroke="#8FA3B8" stroke-width="1.2"></rect><path d="M78 198 L78 214 M120 198 L120 214 M162 198 L162 214" stroke="#8FA3B8" stroke-width="1"></path></g>
+<g><rect x="50" y="178" width="140" height="16" fill="#34465E" stroke="#D7DEE6" stroke-width="1.2"></rect><path d="M96 178 L96 194 M144 178 L144 194" stroke="#8FA3B8" stroke-width="1"></path></g>
+<g><polygon points="60,60 180,60 164,172 76,172" fill="#5E7591"></polygon><polygon points="60,60 180,60 176,72 64,72" fill="#D7DEE6" opacity="0.5"></polygon></g>
+<polygon pathLength="1" points="60,60 180,60 164,172 76,172" fill="none" stroke="#D7DEE6" stroke-width="1.8" stroke-linejoin="round"></polygon>
+<path pathLength="1" d="M90 60 L96 172 M150 60 L144 172" stroke="#34465E" stroke-width="1"></path>
+<path pathLength="1" d="M120 112 C 140 88, 170 88, 170 112 C 170 136, 140 136, 120 112 C 100 88, 70 88, 70 112 C 70 136, 100 136, 120 112 Z" fill="none" stroke="#0E1A2B" stroke-width="10" stroke-linecap="round"></path>
+<path pathLength="1" d="M120 112 C 140 88, 170 88, 170 112 C 170 136, 140 136, 120 112 C 100 88, 70 88, 70 112 C 70 136, 100 136, 120 112 Z" fill="none" stroke="#F26A1B" stroke-width="5" stroke-linecap="round"></path>
+<g><g>
+<circle cx="0" cy="0" r="12" fill="#F3EEE3"></circle>
+<circle cx="0" cy="0" r="5.5" fill="#F3EEE3"></circle>
+</g></g>
+</svg>

@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 240 240" role="img" aria-label="Animated Notitia Civica mark: a civic temple facade draws itself inside a circle, an orange oculus lights in the pediment, and lines of a public notice are written on the base" style="filter: drop-shadow(3px 4px 0 #050B14)">
+<circle pathLength="1" cx="120" cy="120" r="96" fill="none" stroke="#8FA3B8" stroke-width="1.2"></circle>
+<path pathLength="1" d="M210 120 L216 120 M120 210 L120 216 M30 120 L24 120 M120 30 L120 24 M183.6 56.4 L187.8 52.2 M183.6 183.6 L187.8 187.8 M56.4 183.6 L52.2 187.8 M56.4 56.4 L52.2 52.2" stroke="#8FA3B8" stroke-width="1.5"></path>
+<polygon pathLength="1" points="120,48 186,88 54,88" fill="none" stroke="#D7DEE6" stroke-width="1.8" stroke-linejoin="round"></polygon>
+<line pathLength="1" x1="50" y1="94" x2="190" y2="94" stroke="#D7DEE6" stroke-width="1.6"></line>
+<path pathLength="1" d="M66 98 L66 158 M93 98 L93 158 M147 98 L147 158 M174 98 L174 158" stroke="#D7DEE6" stroke-width="5" stroke-linecap="round"></path>
+<path pathLength="1" d="M74 98 L74 158 M101 98 L101 158 M155 98 L155 158 M182 98 L182 158" stroke="#5E7591" stroke-width="1" opacity="0.8"></path>
+<path pathLength="1" d="M52 164 L188 164 M44 172 L196 172 M36 180 L204 180" stroke="#8FA3B8" stroke-width="1.4"></path>
+<path pathLength="1" d="M108 108 L132 108 M104 120 L136 120 M110 132 L130 132 M106 144 L134 144" stroke="#F26A1B" stroke-width="3" stroke-linecap="round"></path>
+<g><circle cx="120" cy="48" r="3.5" fill="#D7DEE6"></circle></g>
+<g><circle cx="54" cy="88" r="3" fill="#D7DEE6"></circle></g>
+<g><circle cx="186" cy="88" r="3" fill="#D7DEE6"></circle></g>
+<g><circle cx="120" cy="74" r="12" fill="#F26A1B"></circle><circle cx="120" cy="74" r="7" fill="#F26A1B"></circle><circle cx="118" cy="72" r="2.5" fill="#FFFFFF" opacity="0.7"></circle></g>
+</svg>

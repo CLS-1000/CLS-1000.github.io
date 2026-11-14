@@ -1,0 +1,175 @@
+---
+import '../styles/global.css';
+import Mark from '../components/Mark.astro';
+import sentinel from '../marks/sentinel.svg?raw';
+import { stages, switchboard, loop, confidence } from '../data/projects';
+
+const all = stages.flatMap((s) => s.projects);
+---
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+<title>CLS-1000</title>
+<meta name="claude:viewport-fit-sides" content="cover" />
+<meta name="description" content="A family of open-source projects that read public records and keep a trail back to the evidence. Portland, Oregon." />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&family=IBM+Plex+Sans:wght@400;500;600&family=Oxanium:wght@500;600;700&display=swap" />
+</head>
+<body>
+<header class="top">
+  <div class="wrap top-in">
+    <a class="brand" href="#top" aria-label="CLS-1000, back to top">
+      <Mark slug="cls" size={30} label="" />
+      <span>CLS-1000</span>
+    </a>
+    <nav aria-label="Sections">
+      <a href="#path">The path</a>
+      <a href="#projects">Projects</a>
+      <a href="#loop">The loop</a>
+      <a href="#rules">House rules</a>
+    </nav>
+  </div>
+</header>
+
+<main id="top">
+  <section class="hero">
+    <div class="wrap hero-in">
+      <div class="hero-copy">
+        <p class="eyebrow">Open-source civic intelligence · Portland, Oregon</p>
+        <h1>Public records, read with a trail back to the evidence.</h1>
+        <p class="lede">CLS-1000 is a family of projects that collect what governments, courts and newsrooms publish, test it, and write it up for people to check. A conclusion is only as good as the trail behind it, so every project keeps the trail.</p>
+        <div class="cta">
+          <a class="btn primary" href="https://cls-1000.github.io/notitia-civica/" target="_blank" rel="noopener">Read Notitia Civica</a>
+          <a class="btn" href="https://github.com/CLS-1000" target="_blank" rel="noopener">Code on GitHub</a>
+        </div>
+      </div>
+      <figure class="hero-art">
+        <div class="sentinel" set:html={sentinel} />
+        <figcaption><span class="mono">The Sentinel</span> Nine projects. One guardian.</figcaption>
+      </figure>
+    </div>
+  </section>
+
+  <section id="path" class="band">
+    <div class="wrap">
+      <header class="sec-head">
+        <p class="eyebrow">The path</p>
+        <h2>How a piece of public information moves through the family</h2>
+      </header>
+      <div class="console">
+        <Mark slug="switchboard" size={40} label="" />
+        <p><strong>SWITCHBOARD</strong> watches every stage from one console. It is the operator’s screen, internal by design, and never one of the public pages.</p>
+      </div>
+      <ol class="path">
+        {stages.map((s, i) => (
+          <li class="step">
+            <span class="step-n mono">{String(i + 1).padStart(2, '0')}</span>
+            <div class="step-marks">
+              {s.projects.map((p) => <a href={`#${p.slug}`} title={p.name}><Mark slug={p.slug} size={52} label="" /></a>)}
+            </div>
+            <h3>{s.title}</h3>
+            <p>{s.note}</p>
+            <p class="step-names mono">{s.projects.map((p) => p.name).join(' · ')}</p>
+          </li>
+        ))}
+      </ol>
+    </div>
+  </section>
+
+  <section id="projects">
+    <div class="wrap">
+      <header class="sec-head">
+        <p class="eyebrow">Projects</p>
+        <h2>One family, one rule</h2>
+        <p class="sub">These describe what each project is built to do, not how far along it is.</p>
+      </header>
+      {stages.map((s) => (
+        <div class="group">
+          <p class="group-label mono">{s.title}</p>
+          <div class="cards">
+            {s.projects.map((p) => (
+              <article class="card" id={p.slug}>
+                <Mark slug={p.slug} size={88} label="" />
+                <div class="card-copy">
+                  <h3>{p.name}</h3>
+                  <p class="role">{p.role}</p>
+                  <p>{p.body}</p>
+                  {p.repo && (p.repo.href
+                    ? <a class="repo mono" href={p.repo.href} target="_blank" rel="noopener">{p.repo.label} ↗</a>
+                    : <span class="repo mono muted">{p.repo.label}</span>)}
+                </div>
+              </article>
+            ))}
+          </div>
+        </div>
+      ))}
+      <div class="group">
+        <p class="group-label mono">Command</p>
+        <article class="card wide" id={switchboard.slug}>
+          <Mark slug={switchboard.slug} size={88} label="" />
+          <div class="card-copy">
+            <h3>{switchboard.name}</h3>
+            <p class="role">{switchboard.role}</p>
+            <p>{switchboard.body} The demo runs on sample data.</p>
+            <a class="repo mono" href="https://cls-1000.github.io/github/" target="_blank" rel="noopener">Open the demo ↗</a>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section id="loop" class="band">
+    <div class="wrap loop-in">
+      <header class="sec-head">
+        <p class="eyebrow">The loop</p>
+        <h2>Storing results is not learning</h2>
+        <p class="sub">CLS learns only when recorded outcomes are read under explicit rules and the lesson shapes a later decision. Model training and autonomous action are off by default, and anything consequential needs a person’s approval.</p>
+      </header>
+      <ol class="loop">
+        {loop.map((l) => (
+          <li><span class="loop-term">{l.term}</span><span class="loop-def">{l.def}</span></li>
+        ))}
+      </ol>
+    </div>
+  </section>
+
+  <section id="rules">
+    <div class="wrap rules-in">
+      <header class="sec-head">
+        <p class="eyebrow">House rules</p>
+        <h2>A pattern is not proof of intent</h2>
+      </header>
+      <div class="rules">
+        <blockquote>
+          <p>Similarity is not proof of coordination. Funding is not proof of control. Silence is not proof of suppression.</p>
+          <cite class="mono">Notitia Civica publication rule</cite>
+        </blockquote>
+        <div class="scale">
+          <p class="scale-head">Internal scores never appear as false authority. Readers see four plain terms instead.</p>
+          <ol class="terms">
+            {confidence.map((c, i) => <li style={`--i:${i}`}><span class="pip" aria-hidden="true"></span>{c}</li>)}
+          </ol>
+        </div>
+        <ul class="facts">
+          <li><strong>Everything is public.</strong> No private access, no classified material, no privileged sources.</li>
+          <li><strong>People decide.</strong> Engines draft; a person decides what is published.</li>
+          <li><strong>Nothing is overwritten.</strong> Signals, reports and verdicts are written once and kept.</li>
+          <li><strong>Officials are seats.</strong> Local reporting names the office held, not the person.</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="foot">
+  <div class="wrap foot-in">
+    <div class="foot-marks" aria-hidden="true">
+      {all.map((p) => <Mark slug={p.slug} size={28} label="" />)}
+    </div>
+    <p class="mono">CLS-1000 · Portland, Oregon · <a href="https://github.com/CLS-1000" target="_blank" rel="noopener">github.com/CLS-1000</a></p>
+  </div>
+</footer>
+</body>
+</html>
