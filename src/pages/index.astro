@@ -3,6 +3,10 @@ import '../styles/global.css';
 import Mark from '../components/Mark.astro';
 import sentinel from '../marks/sentinel.svg?raw';
 import { stages, switchboard, loop, confidence } from '../data/projects';
+import { loadArticles, articleUrl, sectionLabel, formatDate, standing, trust, NC_BASE } from '../data/published';
+
+const { articles } = await loadArticles();
+const latest = articles.slice(0, 6);
 
 const all = stages.flatMap((s) => s.projects);
 ---
@@ -25,6 +29,7 @@ const all = stages.flatMap((s) => s.projects);
       <span>CLS-1000</span>
     </a>
     <nav aria-label="Sections">
+      <a href="#published">Published</a>
       <a href="#path">The path</a>
       <a href="#projects">Projects</a>
       <a href="#loop">The loop</a>
@@ -41,7 +46,7 @@ const all = stages.flatMap((s) => s.projects);
         <h1>Public records, read with a trail back to the evidence.</h1>
         <p class="lede">CLS-1000 is a family of projects that collect what governments, courts and newsrooms publish, test it, and write it up for people to check. A conclusion is only as good as the trail behind it, so every project keeps the trail.</p>
         <div class="cta">
-          <a class="btn primary" href="https://cls-1000.github.io/notitia-civica/" target="_blank" rel="noopener">Read Notitia Civica</a>
+          <a class="btn primary" href={`${NC_BASE}/`} target="_blank" rel="noopener">Read Notitia Civica</a>
           <a class="btn" href="https://github.com/CLS-1000" target="_blank" rel="noopener">Code on GitHub</a>
         </div>
       </div>
@@ -49,6 +54,42 @@ const all = stages.flatMap((s) => s.projects);
         <div class="sentinel" set:html={sentinel} />
         <figcaption><span class="mono">The Sentinel</span> Nine projects. One guardian.</figcaption>
       </figure>
+    </div>
+  </section>
+
+  <section id="published" class="published">
+    <div class="wrap">
+      <header class="sec-head">
+        <p class="eyebrow">Published</p>
+        <h2>Latest from Notitia Civica</h2>
+        <p class="sub">Every story here passed model verification and an editor’s sign-off before it went out. Each one lists its sources.</p>
+      </header>
+      {latest.length > 0 ? (
+        <ol class="feed">
+          {latest.map((a, i) => (
+            <li class:list={['story', { lead: i === 0, retracted: a.status === 'retracted' }]}>
+              <p class="story-meta mono">
+                <span class="badge">{a.status === 'retracted' ? 'Retracted' : a.badge_type}</span>
+                <span>{sectionLabel(a.section)}</span>
+                <time datetime={a.published_at}>{formatDate(a.published_at)}</time>
+              </p>
+              <h3><a href={articleUrl(a)} target="_blank" rel="noopener">{a.headline}</a></h3>
+              <p class="deck">{a.deck}</p>
+            </li>
+          ))}
+        </ol>
+      ) : (
+        <p class="sub">No stories are published yet. Verified stories appear here after an editor signs off.</p>
+      )}
+      <div class="standing">
+        {standing.map((p) => (
+          <a class="standing-item" href={p.href} target="_blank" rel="noopener">
+            <span class="kicker mono">{p.kicker}{p.date && <> · <time datetime={p.date}>{formatDate(p.date + 'T12:00:00Z')}</time></>}</span>
+            <span class="standing-title">{p.title} ↗</span>
+            <span class="standing-body">{p.body}</span>
+          </a>
+        ))}
+      </div>
     </div>
   </section>
 
@@ -168,6 +209,9 @@ const all = stages.flatMap((s) => s.projects);
     <div class="foot-marks" aria-hidden="true">
       {all.map((p) => <Mark slug={p.slug} size={28} label="" />)}
     </div>
+    <nav class="trust" aria-label="Notitia Civica standards">
+      {trust.map((t) => <a href={t.href} target="_blank" rel="noopener" title={t.body}>{t.title}</a>)}
+    </nav>
     <p class="mono">CLS-1000 · Portland, Oregon · <a href="https://github.com/CLS-1000" target="_blank" rel="noopener">github.com/CLS-1000</a></p>
   </div>
 </footer>
