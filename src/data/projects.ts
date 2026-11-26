@@ -7,6 +7,7 @@ export type Project = {
   role: string;        // one-line job
   body: string;
   repo?: { label: string; href?: string };
+  link?: { label: string; href: string };  // an internal page about the project
 };
 
 export type Stage = { key: string; title: string; note: string; projects: Project[] };
@@ -100,6 +101,7 @@ export const stages: Stage[] = [
         name: 'World State Brief',
         role: 'The geopolitical column',
         body: 'A fixed format, so a reader always knows where to look: executive summary, priority developments, strategic assessment, watch list and the full source register.',
+        link: { label: 'How the newsroom works', href: '/world-state-brief.html' },
       },
       {
         slug: 'citizen-cognisance',
