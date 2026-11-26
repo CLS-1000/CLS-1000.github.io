@@ -145,6 +145,7 @@ const all = stages.flatMap((s) => s.projects);
                   {p.repo && (p.repo.href
                     ? <a class="repo mono" href={p.repo.href} target="_blank" rel="noopener">{p.repo.label} ↗</a>
                     : <span class="repo mono muted">{p.repo.label}</span>)}
+                  {p.link && <a class="repo mono" href={p.link.href}>{p.link.label} →</a>}
                 </div>
               </article>
             ))}

@@ -1,0 +1,146 @@
+---
+// World State Brief, special edition: how the newsroom works. Public explainer, broadsheet layout.
+import '@fontsource/playfair-display/700.css';
+import '@fontsource/playfair-display/900.css';
+import '@fontsource/libre-caslon-text/400.css';
+import '@fontsource/libre-caslon-text/700.css';
+import '@fontsource/ibm-plex-mono/400.css';
+---
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1" />
+<title>How the Newsroom Works · World State Brief</title>
+<meta name="description" content="How Notitia Civica's newsroom turns public signals into checked, signed reporting." />
+<style is:global>
+/* VOICE: a printed broadsheet intelligence brief, sober and dense.
+   IDEA: an old newspaper page set by hand: masthead, rules, columns.
+   PICTURE: the masthead and the column grid are the picture.
+   COLOUR and TYPE: pearl #F7F4EC paper, ink #1C1A17 (operator's spec); Caslon body, Playfair heads.
+   LAYOUT: centered masthead, 3 columns with thin rules, boxes span when needed; no split paragraphs. */
+:root{--paper:#F7F4EC;--ink:#1C1A17;--rule:#1C1A17;--soft:#5b564e}
+*{box-sizing:border-box;min-width:0}
+html{background:#e9e4d8}
+body{margin:0 auto;max-width:1180px;background:var(--paper);color:var(--ink);font:10.5pt/1.5 "Libre Caslon Text",Georgia,serif;padding:28px clamp(16px,4vw,56px) 48px;overflow-x:clip}
+.mast{text-align:center;border-bottom:3px double var(--rule);padding-bottom:10px;margin-bottom:6px}
+.mast .org{font:700 13px/1 "Playfair Display",serif;letter-spacing:.32em;text-transform:uppercase}
+.mast h1{font:900 clamp(34px,6vw,64px)/1.02 "Playfair Display",serif;margin:.12em 0 .1em;letter-spacing:.02em;text-transform:uppercase}
+.mast .ed{font-size:12px;font-variant:small-caps;letter-spacing:.08em;margin:2px 0}
+.mast .verb{font:11px/1.45 "IBM Plex Mono",monospace;color:var(--soft);white-space:pre-wrap;margin-top:6px}
+.runhead{display:none}
+.cols{column-count:3;column-gap:28px;column-rule:1px solid var(--rule);margin-top:14px}
+.sec{margin:0 0 14px}
+h2{white-space:pre-wrap;font:700 12px/1.2 "Playfair Display",serif;letter-spacing:.14em;text-transform:uppercase;border-top:1px solid var(--rule);padding-top:6px;margin:10px 0 8px;break-after:avoid;column-span:none}
+h3.hed{font:900 19px/1.15 "Playfair Display",serif;margin:4px 0 6px;break-after:avoid;text-wrap:balance}
+h4.kicker{font:700 10.5px/1.2 "Playfair Display",serif;letter-spacing:.16em;margin:12px 0 4px;break-after:avoid;font-variant:small-caps}
+p{margin:0 0 .65em;text-align:justify;hyphens:auto;break-inside:avoid;orphans:3;widows:3}
+p.domains{font-size:10px;letter-spacing:.12em;color:var(--soft);text-align:left;margin-bottom:6px}
+.summary{border-bottom:1px solid var(--rule);margin-top:12px;padding-bottom:10px}
+.summary h2{border-top:0;text-align:center}
+.summary p.lede{font-size:12.5pt;line-height:1.5;column-count:2;column-gap:28px;column-rule:1px solid var(--rule)}
+.keep,.box,.lead,.feed,.watch{break-inside:avoid}
+.box{border:1px solid var(--rule);padding:8px 10px;margin:8px 0 12px}
+.box .boxh{font:700 10px/1 "Playfair Display",serif;letter-spacing:.16em;border-bottom:1px solid var(--rule);padding-bottom:5px;margin-bottom:6px}
+.box p{font-size:9.8pt;text-align:left;margin:0 0 .4em}
+.lead h3{font:700 13px/1.25 "Playfair Display",serif;letter-spacing:.06em;margin:10px 0 4px;border-top:1px solid var(--rule);padding-top:6px}
+.lead p.meta{text-align:left;font-size:9.8pt;margin:0 0 .3em}
+pre.feed{font:8.6pt/1.45 "IBM Plex Mono",monospace;white-space:pre-wrap;overflow-wrap:anywhere;background:#efe9dc;border-left:2px solid var(--rule);padding:8px 10px;margin:6px 0 12px}
+ul.watch{list-style:none;padding:0;margin:0}
+ul.watch li{padding:5px 0;border-bottom:1px dotted var(--soft)}
+ul.watch li:first-child{padding-top:0}
+footer{border-top:3px double var(--rule);margin-top:18px;padding-top:8px;font:10px/1.5 "IBM Plex Mono",monospace;white-space:pre-line;text-align:center;color:var(--soft)}
+@media (max-width:900px){.cols{column-count:2}}
+@media (max-width:600px){.cols,.summary p.lede{column-count:1}body{padding:18px 14px 36px}}
+@media print{
+  @page{size:letter;margin:.6in .55in .55in}
+  html{background:none} body{max-width:none;padding:0}
+  .runhead{display:block;position:fixed;top:-.38in;left:0;right:0;font:9px/1 "Playfair Display",serif;letter-spacing:.14em;text-transform:uppercase;border-bottom:.5px solid var(--rule);padding-bottom:3px}
+}
+.back{max-width:1180px;margin:0 auto 6px;font:11px/1 "IBM Plex Mono",monospace}
+.back a{color:var(--soft);text-decoration:none}
+.back a:hover{text-decoration:underline}
+@media print{.back{display:none}}
+</style>
+</head>
+<body>
+<div class="runhead">Notitia Civica Newsroom · World State Brief · Special Edition</div>
+<nav class="back"><a href="/#world-state-brief">← CLS-1000</a></nav>
+<header class="mast">
+  <div class="org">Notitia Civica Newsroom</div>
+  <h1>World State Brief</h1>
+  <div class="ed">Special Edition · How the Newsroom Works · November 2026</div>
+  <div class="verb">THE PUBLICATION · THE ENGINES · THE DESK · THE RULES</div>
+</header>
+
+<div class="summary"><section class="sec"><h2>E X E C U T I V E   S U M M A R Y</h2>
+<p class="lede">Notitia Civica is a nonpartisan public publication. Behind it sits a newsroom: engines that read what governments, courts and newsrooms publish, one desk that checks everything they find, and one rule that holds the whole thing together. Nothing reaches the public until a primary source backs it, a person reads it, and an editor signs it. The machines find leads. People do the reporting.</p>
+</section></div>
+
+<main class="cols">
+
+<section class="sec"><h2>T H E   P U B L I C A T I O N</h2>
+<h4 class="kicker">NOTITIA CIVICA</h4>
+<h3 class="hed">A Publication That Shows Its Evidence</h3>
+<p>Notitia Civica publishes findings and the evidence behind them. It is strictly nonpartisan: descriptive, not prosecutorial. It measures things and lets readers make the call.</p>
+<p>Every piece states what happened, why it matters, what supports it, what is uncertain and what to watch next. Only signed, editor-approved stories reach the site.</p>
+<p>The Oregon measure counter, the signed page titled "Oregon Legislature, Verified," is the publication's proof of method. Every number on it traces to a sealed, signed record that anyone can check.</p>
+<h4 class="kicker">THE WORLD STATE BRIEF</h4>
+<p>The brief is the newsroom's geopolitical column. Its format is fixed, so a reader always knows where to look: an executive summary, the priority developments, the situations still developing, the leads worth reporting and a watch list for the next day.</p>
+</section>
+
+<section class="sec"><h2>T H E   E N G I N E S</h2>
+<p>Each engine has one job. They hand their findings to the newsroom as data, and the newsroom checks every one before anything is written.</p>
+
+<h4 class="kicker">SPEC-1 · THE WIDE NET</h4>
+<p>Reads more than a reporter can. It harvests open sources and scores each signal on four gates: credibility, substance, freshness and novelty. A model checks what survives, and every record carries a stamp saying how it was checked.</p>
+
+<h4 class="kicker">PDX-1I · THE HOMETOWN LEDGER</h4>
+<p>Applies the same discipline to the Portland metro: campaign finance, legislative actions, economic-interest statements and civic infrastructure. It reports structure and timing, not motive.</p>
+
+<h4 class="kicker">PROC_TRACK · THE LEGISLATURE'S RULEBOOK</h4>
+<p>Replays every action on every Oregon bill against chamber procedure and proves each step was legal. It replays all 3,466 measures of the 2025 session. Vetoes, veto overrides, line-item vetoes and laws that took effect without the Governor's signature become leads.</p>
+
+<h4 class="kicker">GATEPOST · THE NOTARY</h4>
+<p>Writes signed, tamper-evident records. Each finding is chained to the one before it and sealed with a published key, so anyone can prove offline that the record was not changed.</p>
+</section>
+
+<section class="sec"><h2>T H E   N E W S R O O M</h2>
+<h3 class="hed">One Desk Checks Everything</h3>
+<p>Every engine's findings land at one editorial desk. Nothing goes around it.</p>
+<h4 class="kicker">SEALING</h4>
+<p>Before a lead counts, the newsroom fetches its source and seals a copy: a fingerprint is taken, and the file is locked. If the source changes or vanishes later, the sealed copy still shows what it said.</p>
+<h4 class="kicker">THE GATES</h4>
+<p>Every lead passes the same checks in order: is it new, is its source authoritative, is it backed by a primary record or by two independent publishers, and is it fresh and strong enough. A lead that falls short only for want of a primary source is not thrown away. It waits in a research queue, marked "needs primary source," until a reporter finds one.</p>
+<h4 class="kicker">DRAFTING</h4>
+<p>A draft must cite its sealed sources in every paragraph. Quotes must match the source character for character, and nothing may be invented. The desk checks each draft against its evidence before an editor ever reads it.</p>
+<h4 class="kicker">ONE DOOR OUT</h4>
+<p>Only signed work leaves the desk, and only through one publishing step. No engine can publish on its own.</p>
+</section>
+
+<section class="sec"><h2>H O W   A   S T O R Y   M O V E S</h2>
+<div class="box keep"><div class="boxh">FROM SIGNAL TO PAGE</div>
+<p>1. An engine finds something and records it.</p>
+<p>2. The newsroom takes it in as a lead, not a finding.</p>
+<p>3. Its source is fetched and sealed.</p>
+<p>4. The gates check it. Strong leads go to the editors; leads without a primary source go to research.</p>
+<p>5. A reporter researches it and drafts the story.</p>
+<p>6. The draft is checked against its sealed sources.</p>
+<p>7. An editor signs it. Only then is it published.</p>
+</div>
+</section>
+
+<section class="sec"><h2>R U L E S   O F   T H E   H O U S E</h2>
+<p><strong>A lead is not a finding.</strong> Anything a machine sorted by rule stays a lead. Only work a model checked and a person signed can be published.</p>
+<p><strong>Primary sources carry the weight.</strong> A news story can point the way. A public record has to confirm it.</p>
+<p><strong>Nonpartisan, always.</strong> Measure, describe, and let the reader decide.</p>
+<p><strong>Keep the trail.</strong> Every claim links back to sealed evidence, so a reader can check it without taking anyone's word for it.</p>
+<p><strong>People decide.</strong> Engines draft; a person decides what is published.</p>
+</section>
+
+</main>
+<footer>WORLD STATE BRIEF · NOTITIA CIVICA NEWSROOM
+A CLS-1000 project · Portland, Oregon
+SPECIAL EDITION // HOW THE NEWSROOM WORKS</footer>
+</body>
+</html>
